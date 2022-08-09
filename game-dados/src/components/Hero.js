@@ -1,16 +1,9 @@
 import React, {useState} from "react";
 import Give from "./Give";
+import penitencias from "../assets/dado";
 
 export default function Hero(props) {
      const [count, setCount] = useState(0);
-     const condiciones = [
-          "Pinta Carita",
-          "Simule el sonido de un animal",
-          "Salte 5 veces",
-          "Lance el dado nuevamente",
-          "Foto de grupo",
-          "Premio sorpresa",
-     ];
 
      function getRandomIntInclusive(min, max) {
           let lista = document.querySelectorAll("li");
@@ -62,8 +55,15 @@ export default function Hero(props) {
                               </ol>
                          </div>
                     </div>
-                    <div className="table">
-                         <h3>Resultado</h3>
+                    <div className="table mx-auto d-block">
+                         <h3 text-center>Resultado</h3>
+                         <img
+                              className="rounded mx-auto d-block"
+                              src={penitencias[count]}
+                              alt=""
+                              width="240px"
+                              height="240px"
+                         />
                     </div>
                     <div className="table">
                          {/*  <img
