@@ -1,9 +1,24 @@
 import React, {useState} from "react";
-import Give from "./Give";
 import penitencias from "../assets/dado";
+
+import RollDice from './RollDice'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+library.add(fas)
+
+
 
 export default function Hero(props) {
      const [count, setCount] = useState(0);
+/*      const [speed, setSpeed] = useState(['one', 'two', 'three', 
+     'four', 'five', 'six'])
+
+     const  handler = () => {
+          return(
+               speed[Math.floor(Math.random()*speed.length)]
+          );
+     } */
 
      function getRandomIntInclusive(min, max) {
           let lista = document.querySelectorAll("li");
@@ -24,7 +39,7 @@ export default function Hero(props) {
                "border-bottom",
                "border-success"
           );
-
+               
           return valorNum;
      }
      function Clean() {
@@ -41,60 +56,55 @@ export default function Hero(props) {
 
      return (
           <>
-               <div className="hero">
-                    <div className="table">
-                         <h3>Penitencias</h3>
-                         <div>
-                              <ol>
-                                   <li id="1">Pinta Carita</li>
-                                   <li id="2">Simule el sonido de un animal</li>
-                                   <li id="3">Salte 5 veces</li>
-                                   <li id="4">Lance el dado nuevamente</li>
-                                   <li id="5">Foto de grupo</li>
-                                   <li id="6">Premio sorpresa</li>
-                              </ol>
+               <div className="contentHero">
+                   <div className="hero">
+                         <div className="table">
+                                   <h3 className="text-center">Penitencias</h3>
+                                   <div>
+                                        <ol>
+                                             <li id="1">Pinta Carita</li>
+                                             <li id="2">Simule el sonido de un animal</li>
+                                             <li id="3">Salte 5 veces</li>
+                                             <li id="4">Lance el dado nuevamente</li>
+                                             <li id="5">Foto de grupo</li>
+                                             <li id="6">Premio sorpresa</li>
+                                        </ol>
+                                   </div>
                          </div>
-                    </div>
-                    <div className="table mx-auto d-block">
-                         <h3 text-center>Resultado</h3>
-                         <img
-                              className="rounded mx-auto d-block"
-                              src={penitencias[count]}
-                              alt=""
-                              width="240px"
-                              height="240px"
-                         />
-                    </div>
-                    <div className="table">
-                         {/*  <img
-                              className="rounded"
-                              src={dado}
-                              alt=""
-                              width="180px"
-                              height="180px"
-                         /> */}
-                         <Give />
-                         <h3>{count}</h3>
-                    </div>
-                    <div>
-                         <button
-                              onClick={() =>
-                                   setCount(getRandomIntInclusive(1, 6))
-                              }
-                              className="btn btn-primary align-items-center"
-                         >
-                              Komui
-                         </button>
-                         <button
-                              onClick={() => {
-                                   setCount(0);
-                                   Clean();
-                              }}
-                              className="btn btn-primary align-items-center"
-                         >
-                              Reiniciar
-                         </button>
-                    </div>
+                         <div className="table mx-auto d-block">
+                              <h3 className="text-center">Resultado</h3>
+                              <img
+                                   className="rounded mx-auto d-block"
+                                   src={penitencias[count]}
+                                   alt=""
+                                   width="240px"
+                                   height="240px"
+                              />
+                         </div>
+                         <div className="table">
+                         <RollDice   />
+                         </div>
+                         <div>
+                              <button
+                                   onClick={() =>
+                                        setCount(getRandomIntInclusive(1, 6))
+                                       
+                                   }
+                                   className="btn btn-primary align-items-center"
+                              >
+                                   Komui
+                              </button>
+                              <button
+                                   onClick={() => {
+                                        setCount(0);
+                                        Clean();
+                                   }}
+                                   className="btn btn-primary align-items-center"
+                              >
+                                   Reiniciar
+                              </button>
+                         </div>
+                   </div>
                </div>
           </>
      );

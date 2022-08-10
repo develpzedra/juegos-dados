@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
+import Test from "./components/Test"; 
 
 function App() {
      return (
@@ -13,6 +14,7 @@ function App() {
                <NavBar />
                <Hero />
                <Footer />
+               <Test />
           </div>
      );
 }
