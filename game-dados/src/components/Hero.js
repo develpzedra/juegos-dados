@@ -2,6 +2,11 @@ import React, {useState} from "react";
 import Give from "./Give";
 import penitencias from "../assets/dado";
 
+/* import ReactDice from 'react-dice-complete';
+import 'react-dice-complete/dist/react-dice-complete.css'
+
+import Dice from 'react-dice-roll'; */
+
 export default function Hero(props) {
      const [count, setCount] = useState(0);
 
@@ -42,6 +47,8 @@ export default function Hero(props) {
      return (
           <>
                <div className="hero">
+                   
+
                     <div className="table">
                          <h3>Penitencias</h3>
                          <div>
@@ -55,8 +62,9 @@ export default function Hero(props) {
                               </ol>
                          </div>
                     </div>
+
                     <div className="table mx-auto d-block">
-                         <h3 text-center>Resultado</h3>
+                         <h3 className="text-center">Resultado</h3>
                          <img
                               className="rounded mx-auto d-block"
                               src={penitencias[count]}
@@ -65,17 +73,26 @@ export default function Hero(props) {
                               height="240px"
                          />
                     </div>
+
                     <div className="table">
-                         {/*  <img
-                              className="rounded"
-                              src={dado}
-                              alt=""
-                              width="180px"
-                              height="180px"
-                         /> */}
-                         <Give />
-                         <h3>{count}</h3>
+                         <div className="contentDice">
+                              <Give />
+                       {/*   <ReactDice 
+                         disableIndividual={true} 
+                         numDice={1} 
+                         outline={true} 
+                         outlineColor='#BFC9CA' 
+                         faceColor='#EAECEE' 
+                         dotColor='#151313' 
+                         dieSize={100}
+                         rollTime={1} 
+                         />    */}
+                        {/*  <Dice size={100} onRoll={(value) => setCount(value)} /> */}
+                         </div>                        
                     </div>
+
+                   
+
                     <div>
                          <button
                               onClick={() =>
@@ -83,7 +100,7 @@ export default function Hero(props) {
                               }
                               className="btn btn-primary align-items-center"
                          >
-                              Komui
+                              Lanzar Dado
                          </button>
                          <button
                               onClick={() => {
