@@ -68,13 +68,13 @@ export default function Hero(props) {
                                                   Paso de baile
                                              </li>
                                              <li className="margin-btn " id="2">
-                                                  Simule el sonido de un animal
+                                                  Simula el sonido de un animal
                                              </li>
                                              <li className="margin-btn" id="3">
-                                                  Salte 5 veces
+                                                  Salta 5 veces
                                              </li>
                                              <li className="margin-btn" id="4">
-                                                  Lance el dado nuevamente
+                                                  Lanza el dado nuevamente
                                              </li>
                                              <li className="margin-btn" id="5">
                                                   Foto de grupo
