@@ -24,7 +24,7 @@ export default function NavBar() {
                                         textAlign: "center",
                                    }}
                               >
-                                   <h1>Sistemas Tecnológico Alcaraván</h1>
+                                   <h1>Sistemas Tecnológicos Alcaraván</h1>
                               </div>
                          </div>
                     </nav>

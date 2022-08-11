@@ -1,46 +1,45 @@
-.RollDice{
-    display: flex;
-    flex-flow: column nowrap;
-    
-  }
-    
-  /* Shows each dice in one row */
-  .RollDice-container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  /* Styling rolldice button */
-  .RollDice button{
-    width:10em;
-    padding:0.5em;
-    border: 0px;
-    border-radius: 10px;
-    color:black;
-    background-color:#253343;
-    margin-top: 3em;
-    align-self: center;
-  }
-    
-  /* Setting hover effect on button */
-  .RollDice button:hover{
-    cursor: pointer;
-  }
-    
-  .RollDice-rolling{
-    border: 0px;
-    border-radius: 10px;
-    background-color:#3A4652 !important;
-    opacity:0.7
-  }
+.RollDice {
+     display: flex;
+     flex-flow: column nowrap;
+}
 
-  .dice{
-    width:10em;
-    padding:0.5em;
-    border: 0px;
-    border-radius: 10px;
-    color:black;
-    background-color:#253343;
-    margin-top: 3em;
-    align-self: center;
-  }
+/* Shows each dice in one row */
+.RollDice-container {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+}
+/* Styling rolldice button */
+.RollDice button {
+     width: 10em;
+     padding: 0.5em;
+     border: 0px;
+     border-radius: 10px;
+     color: black;
+     background-color: #253343;
+     margin-top: 3em;
+     align-self: center;
+}
+
+/* Setting hover effect on button */
+.RollDice button:hover {
+     cursor: pointer;
+}
+
+.RollDice-rolling {
+     border: 0px;
+     border-radius: 10px;
+     background-color: #3a4652 !important;
+     opacity: 0.7;
+}
+
+.dice {
+     width: 10em;
+     padding: 0.5em;
+     border: 0px;
+     border-radius: 10px;
+     color: black;
+     background-color: #253343;
+     margin-top: 3em;
+     align-self: center;
+}

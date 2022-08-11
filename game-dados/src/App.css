@@ -1,16 +1,13 @@
 /*Desde aqui se empezo a estilar*/
 /* ------ Estilo para el div de la tabla, el contenido y los dados --- */
-.contenteHero{
-     margin-top: 200px;
+.contenteHero {
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
      background-color: red;
-     
 }
 .hero {
-
      display: grid;
      grid-template-rows: repeat(1, 1fr);
      grid-template-columns: repeat(3, 1fr);
@@ -37,18 +34,87 @@
      }
 }
 
-.table {
+.table-item {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     border: 1px solid black;
+     border: 1px solid rgba(37, 51, 67, 0.2);
 }
 
-.contentBtn{
+.contentBtn {
      display: flex;
      justify-content: center;
 }
 
-.margin{
+.margin {
      margin-left: 10px;
+}
+.color-btn {
+     width: 10em;
+     padding: 0.5em;
+     border: 0px;
+     border-radius: 10px;
+     color: white;
+     background-color: #253343;
+     margin-top: 3em;
+     align-self: center;
+}
+
+.color-btn-rolling {
+     width: 10em;
+     padding: 0.5em;
+     border: 0px;
+     border-radius: 10px;
+     color: white;
+     background-color: #3a4652 !important;
+     margin-top: 3em;
+     align-self: center;
+     border: 0px;
+     border-radius: 10px;
+     opacity: 0.7;
+}
+.margin-btn {
+     margin-bottom: 10px;
+}
+
+.colorBg {
+     font-weight: bolder;
+     border-radius: 5px;
+     height: 33px;
+     border: 1px solid black;
+     background-color: #f8af2e;
+}
+
+.homeContent {
+     width: 100%;
+     height: 91vh;
+     border: 1px solid black;
+     background-color: #3a4652;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+          url("./assets/home.jpeg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.flexContent {
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.centerBtn {
+     width: 10em;
+     padding: 0.5em;
+     border: 0px;
+     border-radius: 10px;
+     color: white;
+     background-color: #253343;
+     margin-top: 3em;
+     align-self: center;
+}
+
+.centerBtn:hover {
+     background-color: #3a4d61;
 }
