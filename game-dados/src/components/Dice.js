@@ -2,17 +2,19 @@ import React,{useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Dice(props){
-   const [dot, setDot] = useState('one')
-   const [rolling, setRolling] = useState(false)
+
+   const [dot, setDot] = useState('one');
+   const [rolling, setRolling] = useState(false);
    
-    function handlerRandom () {
+    function handlerRandom (e) {
         
-          setRolling(true)
-          console.log(rolling)
-          
+          setRolling(true);          
+          console.log(e)
         return props.dots[Math.floor(Math.random()*props.dots.length)]
+        
 
     } 
+
     setTimeout(() => {
       
             

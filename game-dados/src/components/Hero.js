@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import penitencias from "../assets/dado";
 
 
-import RollDice from './RollDice'
+import RollDice from './RollDice';
 import Dice from "./Dice";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -11,6 +11,7 @@ library.add(fas)
 
 export default function Hero(props) {
      const [count, setCount] = useState(0);
+     const [dot, setDot] = useState('one')
 
      function getRandomIntInclusive(min, max) {
           let lista = document.querySelectorAll("li");
@@ -79,7 +80,7 @@ export default function Hero(props) {
 
                          <div className="table">
                          
-                         <Dice   />
+                         <Dice />
                          </div>
 
 

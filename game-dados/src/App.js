@@ -14,8 +14,8 @@ function App() {
           <div className="App">
                <NavBar />
                <Hero />
-               <Dice />
                <Footer />
+               
           </div>
      );
 }
