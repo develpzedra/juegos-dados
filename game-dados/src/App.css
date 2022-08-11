@@ -1,27 +1,21 @@
 /*Desde aqui se empezo a estilar*/
 /* ------ Estilo para el div de la tabla, el contenido y los dados --- */
-
-.hero {
-<<<<<<< HEAD
-
-=======
-     
->>>>>>> 0f38952a43587aa2e0e7dc427675158287ad5189
-     display: grid;
-     grid-template-rows: repeat(1, 1fr);
-     grid-template-columns: repeat(3, 1fr);
-}
-<<<<<<< HEAD
-
-
-=======
 .contenteHero{
+     margin-top: 200px;
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
+     background-color: red;
+     
 }
->>>>>>> 0f38952a43587aa2e0e7dc427675158287ad5189
+.hero {
+
+     display: grid;
+     grid-template-rows: repeat(1, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+}
+
 /*responsive de los div de la tabla, contanido y los dados*/
 
 @media only screen and (max-width: 600px) {
@@ -50,7 +44,11 @@
      border: 1px solid black;
 }
 
-.contentDice{
+.contentBtn{
      display: flex;
      justify-content: center;
+}
+
+.margin{
+     margin-left: 10px;
 }

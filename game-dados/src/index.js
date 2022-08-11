@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-<<<<<<< HEAD
 
-=======
->>>>>>> 0f38952a43587aa2e0e7dc427675158287ad5189
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
