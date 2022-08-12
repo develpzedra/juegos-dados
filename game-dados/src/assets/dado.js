@@ -1,4 +1,4 @@
-import pintaCarita from "./pintaCarita.jpg";
+import pintaCarita from "./dance.gif";
 import animales from "./animales.gif";
 import salta from "./salta.png";
 import given from "./given.gif";
